@@ -1,11 +1,13 @@
+using clsEstructuraDatos.Interface;
+using clsEstructuraDatos.Modelos;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton<ITarjetaService, clsTarjetaService>(); //Añadir un servicio nuevo que no se reinicie por cada petición http
 
 var app = builder.Build();
 

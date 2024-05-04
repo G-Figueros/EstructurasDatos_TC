@@ -1,0 +1,47 @@
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Listas Enlazadas\frmListasEnlazadas\clsEstructuraDatos\bin\Debug\net6.0\clsEstructuraDatos.deps.json
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Listas Enlazadas\frmListasEnlazadas\clsEstructuraDatos\bin\Debug\net6.0\clsEstructuraDatos.dll
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Listas Enlazadas\frmListasEnlazadas\clsEstructuraDatos\bin\Debug\net6.0\clsEstructuraDatos.pdb
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Listas Enlazadas\frmListasEnlazadas\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.csproj.AssemblyReference.cache
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Listas Enlazadas\frmListasEnlazadas\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Listas Enlazadas\frmListasEnlazadas\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.AssemblyInfoInputs.cache
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Listas Enlazadas\frmListasEnlazadas\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.AssemblyInfo.cs
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Listas Enlazadas\frmListasEnlazadas\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Listas Enlazadas\frmListasEnlazadas\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.dll
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Listas Enlazadas\frmListasEnlazadas\clsEstructuraDatos\obj\Debug\net6.0\refint\clsEstructuraDatos.dll
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Listas Enlazadas\frmListasEnlazadas\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.pdb
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Listas Enlazadas\frmListasEnlazadas\clsEstructuraDatos\obj\Debug\net6.0\ref\clsEstructuraDatos.dll
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\EstructuraDatos\clsEstructuraDatos\bin\Debug\net6.0\clsEstructuraDatos.deps.json
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\EstructuraDatos\clsEstructuraDatos\bin\Debug\net6.0\clsEstructuraDatos.dll
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\EstructuraDatos\clsEstructuraDatos\bin\Debug\net6.0\clsEstructuraDatos.pdb
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\EstructuraDatos\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.csproj.AssemblyReference.cache
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\EstructuraDatos\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\EstructuraDatos\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.AssemblyInfoInputs.cache
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\EstructuraDatos\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.AssemblyInfo.cs
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\EstructuraDatos\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\EstructuraDatos\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.dll
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\EstructuraDatos\clsEstructuraDatos\obj\Debug\net6.0\refint\clsEstructuraDatos.dll
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\EstructuraDatos\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.pdb
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\EstructuraDatos\clsEstructuraDatos\obj\Debug\net6.0\ref\clsEstructuraDatos.dll
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Proyecto  Listas, Pilas y Colas\frmGuerraCartas\clsEstructuraDatos\bin\Debug\net6.0\clsEstructuraDatos.deps.json
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Proyecto  Listas, Pilas y Colas\frmGuerraCartas\clsEstructuraDatos\bin\Debug\net6.0\clsEstructuraDatos.dll
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Proyecto  Listas, Pilas y Colas\frmGuerraCartas\clsEstructuraDatos\bin\Debug\net6.0\clsEstructuraDatos.pdb
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Proyecto  Listas, Pilas y Colas\frmGuerraCartas\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.csproj.AssemblyReference.cache
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Proyecto  Listas, Pilas y Colas\frmGuerraCartas\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Proyecto  Listas, Pilas y Colas\frmGuerraCartas\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.AssemblyInfoInputs.cache
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Proyecto  Listas, Pilas y Colas\frmGuerraCartas\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.AssemblyInfo.cs
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Proyecto  Listas, Pilas y Colas\frmGuerraCartas\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Proyecto  Listas, Pilas y Colas\frmGuerraCartas\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.dll
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Proyecto  Listas, Pilas y Colas\frmGuerraCartas\clsEstructuraDatos\obj\Debug\net6.0\refint\clsEstructuraDatos.dll
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Proyecto  Listas, Pilas y Colas\frmGuerraCartas\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.pdb
+C:\Users\gabri\Desktop\Gabriel 2024\Programación III\Proyecto  Listas, Pilas y Colas\frmGuerraCartas\clsEstructuraDatos\obj\Debug\net6.0\ref\clsEstructuraDatos.dll
+C:\Gabriel\Personal\Gabriel 2024\Programación III\Laboratorio Arbol AVL\Laboratorio AVL\clsEstructuraDatos\bin\Debug\net6.0\clsEstructuraDatos.deps.json
+C:\Gabriel\Personal\Gabriel 2024\Programación III\Laboratorio Arbol AVL\Laboratorio AVL\clsEstructuraDatos\bin\Debug\net6.0\clsEstructuraDatos.dll
+C:\Gabriel\Personal\Gabriel 2024\Programación III\Laboratorio Arbol AVL\Laboratorio AVL\clsEstructuraDatos\bin\Debug\net6.0\clsEstructuraDatos.pdb
+C:\Gabriel\Personal\Gabriel 2024\Programación III\Laboratorio Arbol AVL\Laboratorio AVL\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Gabriel\Personal\Gabriel 2024\Programación III\Laboratorio Arbol AVL\Laboratorio AVL\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.AssemblyInfoInputs.cache
+C:\Gabriel\Personal\Gabriel 2024\Programación III\Laboratorio Arbol AVL\Laboratorio AVL\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.AssemblyInfo.cs
+C:\Gabriel\Personal\Gabriel 2024\Programación III\Laboratorio Arbol AVL\Laboratorio AVL\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.csproj.CoreCompileInputs.cache
+C:\Gabriel\Personal\Gabriel 2024\Programación III\Laboratorio Arbol AVL\Laboratorio AVL\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.dll
+C:\Gabriel\Personal\Gabriel 2024\Programación III\Laboratorio Arbol AVL\Laboratorio AVL\clsEstructuraDatos\obj\Debug\net6.0\refint\clsEstructuraDatos.dll
+C:\Gabriel\Personal\Gabriel 2024\Programación III\Laboratorio Arbol AVL\Laboratorio AVL\clsEstructuraDatos\obj\Debug\net6.0\clsEstructuraDatos.pdb
+C:\Gabriel\Personal\Gabriel 2024\Programación III\Laboratorio Arbol AVL\Laboratorio AVL\clsEstructuraDatos\obj\Debug\net6.0\ref\clsEstructuraDatos.dll
