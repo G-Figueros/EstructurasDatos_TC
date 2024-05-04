@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_TC", "API_TC\API_TC.csproj", "{2F156A76-9419-4DBD-9520-C8B515C08E06}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "clsEstructuraDatos", "..\..\..\..\Laboratorio Arbol AVL\Laboratorio AVL\clsEstructuraDatos\clsEstructuraDatos.csproj", "{61E07B30-CD0E-4100-B757-F10F2C68F370}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2F156A76-9419-4DBD-9520-C8B515C08E06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F156A76-9419-4DBD-9520-C8B515C08E06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F156A76-9419-4DBD-9520-C8B515C08E06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61E07B30-CD0E-4100-B757-F10F2C68F370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E07B30-CD0E-4100-B757-F10F2C68F370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E07B30-CD0E-4100-B757-F10F2C68F370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E07B30-CD0E-4100-B757-F10F2C68F370}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
