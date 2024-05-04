@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "clsEstructuraDatos/1.0.0": {
+        "runtime": {
+          "clsEstructuraDatos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "clsEstructuraDatos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
