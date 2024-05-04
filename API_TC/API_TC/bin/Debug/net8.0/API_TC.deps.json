@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "API_TC/1.0.0": {
         "dependencies": {
-          "Swashbuckle.AspNetCore": "6.4.0"
+          "Swashbuckle.AspNetCore": "6.4.0",
+          "clsEstructuraDatos": "1.0.0"
         },
         "runtime": {
           "API_TC.dll": {}
@@ -60,6 +61,11 @@
             "fileVersion": "6.4.0.0"
           }
         }
+      },
+      "clsEstructuraDatos/1.0.0": {
+        "runtime": {
+          "clsEstructuraDatos.dll": {}
+        }
       }
     }
   },
@@ -110,6 +116,11 @@
       "sha512": "sha512-1Hh3atb3pi8c+v7n4/3N80Jj8RvLOXgWxzix6w3OZhB7zBGRwsy7FWr4e3hwgPweSBpwfElqj4V4nkjYabH9nQ==",
       "path": "swashbuckle.aspnetcore.swaggerui/6.4.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    },
+    "clsEstructuraDatos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

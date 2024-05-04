@@ -31,3 +31,5 @@ C:\Gabriel\Personal\Gabriel 2024\Programación III\PROYECTO\Repositorio\Estructu
 C:\Gabriel\Personal\Gabriel 2024\Programación III\PROYECTO\Repositorio\EstructurasDatos_TC\API_TC\API_TC\obj\Debug\net8.0\API_TC.pdb
 C:\Gabriel\Personal\Gabriel 2024\Programación III\PROYECTO\Repositorio\EstructurasDatos_TC\API_TC\API_TC\obj\Debug\net8.0\API_TC.genruntimeconfig.cache
 C:\Gabriel\Personal\Gabriel 2024\Programación III\PROYECTO\Repositorio\EstructurasDatos_TC\API_TC\API_TC\obj\Debug\net8.0\ref\API_TC.dll
+C:\Gabriel\Personal\Gabriel 2024\Programación III\PROYECTO\Repositorio\EstructurasDatos_TC\API_TC\API_TC\bin\Debug\net8.0\clsEstructuraDatos.dll
+C:\Gabriel\Personal\Gabriel 2024\Programación III\PROYECTO\Repositorio\EstructurasDatos_TC\API_TC\API_TC\bin\Debug\net8.0\clsEstructuraDatos.pdb
