@@ -67,12 +67,18 @@
   },
   {
     "ContainingType": "API_TC.Controllers.CargaInicialController",
-    "Method": "GetLiberarPilaMovimientos",
-    "RelativePath": "CargaInicial/GetLiberarPilaMovimientos",
+    "Method": "GetMovimientosPila",
+    "RelativePath": "CargaInicial/GetLiberarMovimientosPila",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "numTarjeta",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.String",
@@ -87,18 +93,12 @@
   },
   {
     "ContainingType": "API_TC.Controllers.CargaInicialController",
-    "Method": "GetMovimientosPila",
-    "RelativePath": "CargaInicial/GetMovimientosPila",
+    "Method": "GetLiberarPilaMovimientos",
+    "RelativePath": "CargaInicial/GetLiberarPilaMovimientos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "numTarjeta",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "System.String",
