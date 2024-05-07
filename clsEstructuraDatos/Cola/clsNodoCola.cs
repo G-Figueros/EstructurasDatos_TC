@@ -1,4 +1,5 @@
-﻿using System;
+﻿using clsEstructuraDatos.Modelos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,14 +7,17 @@ using System.Threading.Tasks;
 
 namespace clsEstructuraDatos.Cola
 {
-    public class clsNodoCola
+    public class clsNodoCola<T>
     {
-        public string nombre { get; set; }
-        public clsNodoCola enlace { get; set; }
+        public T dato { get; set; }
 
-        public clsNodoCola(string valor)
+        public clsMovimiento pago { get; set; }
+        public clsNodoCola<T> enlace { get; set; }
+
+        public clsNodoCola(T valor, clsMovimiento pagoV)
         {
-            nombre = valor;
+            dato = valor;
+            pago = pagoV;
             enlace = null;
         }
     }

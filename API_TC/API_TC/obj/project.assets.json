@@ -88,16 +88,6 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
-      },
-      "clsEstructuraDatos/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/clsEstructuraDatos.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/clsEstructuraDatos.dll": {}
-        }
       }
     }
   },
@@ -430,17 +420,11 @@
         "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
-    },
-    "clsEstructuraDatos/1.0.0": {
-      "type": "project",
-      "path": "../../../../../Laboratorio Arbol AVL/Laboratorio AVL/clsEstructuraDatos/clsEstructuraDatos.csproj",
-      "msbuildProject": "../../../../../Laboratorio Arbol AVL/Laboratorio AVL/clsEstructuraDatos/clsEstructuraDatos.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Swashbuckle.AspNetCore >= 6.4.0",
-      "clsEstructuraDatos >= 1.0.0"
+      "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
   "packageFolders": {
@@ -474,11 +458,7 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "C:\\Gabriel\\Personal\\Gabriel 2024\\Programación III\\Laboratorio Arbol AVL\\Laboratorio AVL\\clsEstructuraDatos\\clsEstructuraDatos.csproj": {
-              "projectPath": "C:\\Gabriel\\Personal\\Gabriel 2024\\Programación III\\Laboratorio Arbol AVL\\Laboratorio AVL\\clsEstructuraDatos\\clsEstructuraDatos.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

@@ -1,4 +1,4 @@
-﻿using clsEstructuraDatos.GeneralLaboratorio;
+﻿using clsEstructuraDatos.Modelos;
 using clsEstructuraDatos.Interface;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,6 @@ namespace clsEstructuraDatos.Arbol
 {
     public class clsArbolBinarioBusqueda:clsArbolBinario
     {
-        int salto = 0;
         public object[] ArrayBB;
         public clsArbolBinarioBusqueda() : base()
         {
@@ -32,20 +31,22 @@ namespace clsEstructuraDatos.Arbol
             }
         }
 
-        protected Object buscar(clsNodoArbol raizSub, string buscado)
+        protected clsTarjeta buscar(clsNodoArbol raizSub, string buscado)
         {
-            try
+            if (raizSub == null)
             {
-                salto++;
-                clsEstudiante dato = (clsEstudiante)raizSub.valorNodo();
+                return null;
+            }
+            else
+            {
+                clsTarjeta dato = (clsTarjeta)raizSub.valorNodo();
                 if (raizSub == null)
                 {
                     return null;
                 }
                 else if (dato.igualQue(buscado))
                 {
-                    ArrayBB = new object[] { dato, salto };
-                    return ArrayBB;
+                    return dato;
                 }
                 else if (dato.menorQue(buscado))
                 {
@@ -55,10 +56,6 @@ namespace clsEstructuraDatos.Arbol
                 {
                     return buscar(raizSub.subarbolIzdo(), buscado);
                 }
-            }
-            catch (Exception ex)
-            {
-                return null;
             }
         }
 
@@ -84,6 +81,24 @@ namespace clsEstructuraDatos.Arbol
             }
             return raizSub;
         }
+
+
+        public double updateSaldo(clsArbolBinarioBusqueda arbol, string numTarjeta, double abono)
+        {
+            clsNodoArbol nodoTarjeta = (clsNodoArbol)arbol.buscar(numTarjeta);
+
+            if (nodoTarjeta == null)
+            {              
+                return 0.0;
+            }
+  
+            clsTarjeta tarjeta = (clsTarjeta)nodoTarjeta.valorNodo();         
+            tarjeta.saldo -= abono;
+
+          
+            return tarjeta.saldo;
+        }
+
 
         public void insertar(Object valor)
         {

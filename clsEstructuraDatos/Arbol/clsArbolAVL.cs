@@ -1,4 +1,4 @@
-﻿using clsEstructuraDatos.GeneralLaboratorio;
+﻿using clsEstructuraDatos.Modelos;
 using clsEstructuraDatos.Interface;
 using System;
 using System.Collections.Generic;
@@ -109,7 +109,7 @@ namespace clsEstructuraDatos.Arbol
             try
             {
                 salto++;
-                clsEstudiante dato = (clsEstudiante)raizSub.valorNodo();
+                clsTarjeta dato = (clsTarjeta)raizSub.valorNodo();
                 if (raizSub == null)
                 {
                     return null;

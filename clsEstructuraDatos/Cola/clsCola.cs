@@ -1,4 +1,5 @@
-﻿using System;
+﻿using clsEstructuraDatos.Modelos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace clsEstructuraDatos.Cola
 {
-    public class clsCola
+    public class clsCola<T>
     {
-        public clsNodoCola primero { get; set; }
-        public clsNodoCola ultimo { get; set; }
+        public clsNodoCola<T> primero { get; set; }
+        public clsNodoCola<T> ultimo { get; set; }
 
         public clsCola()
         {
@@ -17,9 +18,9 @@ namespace clsEstructuraDatos.Cola
             ultimo = null;
         }
 
-        public void pushCola(string cliente)
+        public void pushCola(T dato, clsMovimiento pago)
         {
-            clsNodoCola nuevoNodo = new clsNodoCola(cliente);
+            clsNodoCola<T> nuevoNodo = new clsNodoCola<T>(dato, pago);
 
             if (ultimo == null)
             {
@@ -33,22 +34,42 @@ namespace clsEstructuraDatos.Cola
             }
         }
 
-        public string deleteCola()
+        public clsNodoCola<T> deleteCola()
         {
             if (primero == null)
             {
-                return "Vacia";
+                return null;
             }
 
-            string valor = primero.nombre;
+            clsNodoCola<T> nodoEliminado = primero;
             primero = primero.enlace;
 
             if (primero == null)
             {
                 ultimo = null;
             }
-            
-            return valor;
+
+            return nodoEliminado;
+        }
+
+
+        public List<clsMovimiento> BuscarPagosPorNumeroTarjeta(string numeroTarjeta)
+        {
+            List<clsMovimiento> pagosRelacionados = new List<clsMovimiento>();
+
+            clsNodoCola<T> nodoActual = primero;
+
+            while (nodoActual != null)
+            {
+                if (nodoActual.dato.Equals(numeroTarjeta))
+                {
+                    pagosRelacionados.Add(nodoActual.pago);
+                }
+
+                nodoActual = nodoActual.enlace;
+            }
+
+            return pagosRelacionados;
         }
     }
 }

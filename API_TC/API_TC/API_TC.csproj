@@ -10,8 +10,4 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Laboratorio Arbol AVL\Laboratorio AVL\clsEstructuraDatos\clsEstructuraDatos.csproj" />
-  </ItemGroup>
-
 </Project>
