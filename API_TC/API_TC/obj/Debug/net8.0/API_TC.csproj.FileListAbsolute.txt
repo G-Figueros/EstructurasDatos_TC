@@ -1,0 +1,8 @@
+C:\Gabriel\Personal\Gabriel 2024\Programación III\PROYECTO\Repositorio\EstructurasDatos_TC\API_TC\API_TC\obj\Debug\net8.0\API_TC.csproj.AssemblyReference.cache
+C:\Gabriel\Personal\Gabriel 2024\Programación III\PROYECTO\Repositorio\EstructurasDatos_TC\API_TC\API_TC\obj\Debug\net8.0\API_TC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Gabriel\Personal\Gabriel 2024\Programación III\PROYECTO\Repositorio\EstructurasDatos_TC\API_TC\API_TC\obj\Debug\net8.0\API_TC.AssemblyInfoInputs.cache
+C:\Gabriel\Personal\Gabriel 2024\Programación III\PROYECTO\Repositorio\EstructurasDatos_TC\API_TC\API_TC\obj\Debug\net8.0\API_TC.AssemblyInfo.cs
+C:\Gabriel\Personal\Gabriel 2024\Programación III\PROYECTO\Repositorio\EstructurasDatos_TC\API_TC\API_TC\obj\Debug\net8.0\API_TC.csproj.CoreCompileInputs.cache
+C:\Gabriel\Personal\Gabriel 2024\Programación III\PROYECTO\Repositorio\EstructurasDatos_TC\API_TC\API_TC\obj\Debug\net8.0\API_TC.MvcApplicationPartsAssemblyInfo.cs
+C:\Gabriel\Personal\Gabriel 2024\Programación III\PROYECTO\Repositorio\EstructurasDatos_TC\API_TC\API_TC\obj\Debug\net8.0\API_TC.MvcApplicationPartsAssemblyInfo.cache
+C:\Gabriel\Personal\Gabriel 2024\Programación III\PROYECTO\Repositorio\EstructurasDatos_TC\API_TC\API_TC\obj\Debug\net8.0\API_TC.sourcelink.json
