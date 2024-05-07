@@ -1,7 +1,125 @@
 [
   {
     "ContainingType": "API_TC.Controllers.CargaInicialController",
-    "Method": "Get",
+    "Method": "GetEstadosCuenta",
+    "RelativePath": "CargaInicial/GetEstadosCuenta",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numTarjeta",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_TC.Controllers.CargaInicialController",
+    "Method": "GetLiberarAumentosCredito",
+    "RelativePath": "CargaInicial/GetLiberarAumentosCredito",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_TC.Controllers.CargaInicialController",
+    "Method": "GetLiberarColaNotificaciones",
+    "RelativePath": "CargaInicial/GetLiberarColaNotificaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numTarjeta",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_TC.Controllers.CargaInicialController",
+    "Method": "GetLiberarColaPagos",
+    "RelativePath": "CargaInicial/GetLiberarColaPagos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_TC.Controllers.CargaInicialController",
+    "Method": "GetMovimientosPila",
+    "RelativePath": "CargaInicial/GetMovimientosPila",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numTarjeta",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_TC.Controllers.CargaInicialController",
+    "Method": "GetSaldos",
     "RelativePath": "CargaInicial/GetSaldos",
     "HttpMethod": "GET",
     "IsController": true,
@@ -15,7 +133,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Double",
+        "Type": "System.String",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -27,7 +145,69 @@
   },
   {
     "ContainingType": "API_TC.Controllers.CargaInicialController",
-    "Method": "Post",
+    "Method": "PatchPagarSaldo",
+    "RelativePath": "CargaInicial/PatchRealizarPago",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numTarjeta",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "abono",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_TC.Controllers.CargaInicialController",
+    "Method": "PostMovimientosPila",
+    "RelativePath": "CargaInicial/PostMovimientosPila",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numTarjeta",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "cargo",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_TC.Controllers.CargaInicialController",
+    "Method": "PostTarjetas",
     "RelativePath": "CargaInicial/PostTarjetas",
     "HttpMethod": "POST",
     "IsController": true,
