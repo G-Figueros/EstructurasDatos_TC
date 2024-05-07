@@ -54,9 +54,10 @@ namespace API_TC.Controllers
                 return "LA CANTIDAD INGRESA SUPERA EL SALDO A PAGAR";
             }
 
-            clsMovimiento pagoSaldo = new clsMovimiento(numTarjeta, abono);
+            clsMovimiento movimientoABONO = new clsMovimiento(numTarjeta, abono, "ABONO");
 
-            _tarjetaService.ColaPago.pushCola(numTarjeta, pagoSaldo);
+            _tarjetaService.ColaPago.pushCola(numTarjeta, movimientoABONO);
+            _tarjetaService.ColaNotificaciones.pushCola(numTarjeta, movimientoABONO);
             _tarjetaService.ListaTarjeta.updateSaldo(numTarjeta, abono, false);
 
             if (abono == saldoPendiente)
@@ -71,11 +72,13 @@ namespace API_TC.Controllers
         public string GetLiberarColaPagos()
         {
             StringBuilder resultado = new StringBuilder();
+
             while (_tarjetaService.ColaPago.primero != null)
             {
-                string tarjetaEliminada = _tarjetaService.ColaPago.deleteCola();
-                resultado.AppendLine("Se liberó la tarjeta de la cola de pagos: " + tarjetaEliminada);
+                clsNodoCola<string> nodo = _tarjetaService.ColaPago.deleteCola();
+                resultado.AppendLine("Pago de la tarjeta: " + nodo.dato + " Monto: " + nodo.pago.monto);
             }
+
             return resultado.ToString();
         }
 
@@ -100,7 +103,8 @@ namespace API_TC.Controllers
                                 "MOVIMIENTOS: " + "\n" + pagosRelacionadosString + "\n" + "\n" + "\n" +
                                 "Saldo Actual: Q. " + cxcTarjetaConsultada.saldo + "\n" +
                                 "Limite Credito: Q. " + cxcTarjetaConsultada.limiteCredito + "\n" +
-                                "Estado: " + status + "\n";
+                                "Estado: " + status + "\n" +
+                                "PIN: " + cxcTarjetaConsultada.pin + "\n";
 
             return cxcTarjeta;
         }
@@ -108,8 +112,9 @@ namespace API_TC.Controllers
         [HttpPost("PostMovimientosPila")]
         public string PostMovimientosPila(string numTarjeta, double cargo)
         {
-            clsMovimiento movimiento = new clsMovimiento(numTarjeta, cargo);
-            _tarjetaService.PilaMovimientos.insertPila(numTarjeta, movimiento, true);
+            clsMovimiento movimientoCARGO = new clsMovimiento(numTarjeta, cargo, "CARGO");
+            _tarjetaService.PilaMovimientos.insertPila(numTarjeta, movimientoCARGO);
+            _tarjetaService.ColaNotificaciones.pushCola(numTarjeta, movimientoCARGO);
             _tarjetaService.ListaTarjeta.updateSaldo(numTarjeta, cargo, true);
 
             return "Movimiento guardado con exito";
@@ -123,47 +128,105 @@ namespace API_TC.Controllers
 
             while (!_tarjetaService.PilaMovimientos.pilaVacia())
             {
-              
                 clsNodoPila nodo = (clsNodoPila)_tarjetaService.PilaMovimientos.deletePila();
-
                 if (nodo.elemento == numTarjeta)
                 {
-
                     resultado.AppendLine("Movimiento relacionado con el número de tarjeta: " + ((clsMovimiento)nodo.elementoObjeto).tarjetaPago + " Monto: Q. " + ((clsMovimiento)nodo.elementoObjeto).monto);
-                    
                 }
-                
-                auxiliar.insertPila(nodo.elemento, nodo.elementoObjeto, nodo.tipo);
+                auxiliar.insertPila(nodo.elemento, nodo.elementoObjeto);
             }
 
             while (!auxiliar.pilaVacia())
             {
                 clsNodoPila nodo = (clsNodoPila)auxiliar.deletePila();
-                _tarjetaService.PilaMovimientos.insertPila(nodo.elemento, nodo.elementoObjeto, nodo.tipo);
+                _tarjetaService.PilaMovimientos.insertPila(nodo.elemento, nodo.elementoObjeto);
+            }
+
+            return resultado.ToString();
+        }
+
+        [HttpGet("GetLiberarPilaMovimientos")]
+        public string GetLiberarPilaMovimientos()
+        {
+            StringBuilder resultado = new StringBuilder();
+
+            while (!_tarjetaService.PilaMovimientos.pilaVacia())
+            {
+                clsNodoPila nodo = (clsNodoPila)_tarjetaService.PilaMovimientos.deletePila();
+                resultado.AppendLine("Movimiento relacionado con el número de tarjeta: " + ((clsMovimiento)nodo.elementoObjeto).tarjetaPago + " Monto: Q. " + ((clsMovimiento)nodo.elementoObjeto).monto + " LIBERADO DE LA PILA");
             }
 
             return resultado.ToString();
         }
 
         [HttpGet("GetLiberarColaNotificaciones")]
-        public string GetLiberarColaNotificaciones(string numTarjeta)
+        public string GetLiberarColaNotificaciones()
         {
+            StringBuilder resultado = new StringBuilder();
 
+            while (_tarjetaService.ColaNotificaciones.primero != null)
+            {
+                clsNodoCola<string> nodo = _tarjetaService.ColaNotificaciones.deleteCola();
+                resultado.AppendLine("Notificacion por: " + nodo.pago.tipo + " - Tarjeta no: " + nodo.dato + " - Monto: Q." + nodo.pago.monto);
+            }
 
-            return " ";
+            return resultado.ToString();
         }
 
-        [HttpGet("GetLiberarAumentosCredito")]
+        [HttpPost("PostCambioPin")]
+        public string PostCambioPin(string numTarjeta, string PIN)
+        {
+            
+            clsTarjeta tarjetaConsultada = _tarjetaService.ListaTarjeta.getTarjeta(numTarjeta);
+            clsCambioPin gestionPIN = new clsCambioPin(tarjetaConsultada, tarjetaConsultada.pin, PIN);
+            _tarjetaService.ListaPin.insertHeaderLista(gestionPIN);
+            _tarjetaService.ListaTarjeta.UpdatePin(gestionPIN);
+
+            return "PIN Actualizado Correctamente";
+        }
+
+
+        [HttpPatch("PatchEstadoTarjeta")]
+        public string PatchEstadoBloqueo(string numTarjeta)
+        {
+            clsTarjeta tarjetaEncontrada = (clsTarjeta)_tarjetaService.ABBCuentas.buscar(numTarjeta);
+
+            if(tarjetaEncontrada.estatusActivo == true)
+            {
+                tarjetaEncontrada.estatusActivo = false;
+                return "TARJETA BLOQUEADA TEMPORALMENTE";
+            }
+            else
+            {
+                tarjetaEncontrada.estatusActivo = true;
+                return "TARJETA ACTIVADA";
+            }
+        }
+
+        [HttpPost("PostSolicitudLimiteCredito")]
+        public string PostSolicitudLimiteCredito(string numTarjeta, double limiteNuevo)
+        {
+            clsSolicitudesLimite solicitudLimite = new clsSolicitudesLimite(numTarjeta, limiteNuevo);
+            _tarjetaService.AumentoLimite.insertPila(numTarjeta, solicitudLimite);
+
+            return "Movimiento guardado con exito";
+        }
+
+
+        [HttpGet("GetProcesarLimiteCredito")]
         public string GetLiberarAumentosCredito()
         {
-            /*StringBuilder resultado = new StringBuilder();
-            while (!_tarjetaService.PilaNotificaciones.pilaVacia())
+            StringBuilder resultado = new StringBuilder();
+
+            while (!_tarjetaService.AumentoLimite.pilaVacia())
             {
-                object elementoEliminado = _tarjetaService.PilaNotificaciones.deletePila();
-                resultado.AppendLine("Se eliminó el elemento de la pila: " + elementoEliminado.ToString());
+                clsNodoPila nodo = (clsNodoPila)_tarjetaService.AumentoLimite.deletePila();
+                clsSolicitudesLimite solicitud = (clsSolicitudesLimite)nodo.elementoObjeto;
+                _tarjetaService.ListaTarjeta.UpdateLimiteCredito(solicitud.numeroTarjeta, solicitud.limiteNuevo);
+                resultado.AppendLine("Solicitud de Aumento de Limite PROCESADO - Tarjeta No. " + solicitud.numeroTarjeta + " - Nuevo Limite: Q. " + solicitud.limiteNuevo + " LIBERADO DE LA PILA");
             }
-            return resultado.ToString();*/
-            return " ";
+
+            return resultado.ToString();
         }
 
     }
